@@ -513,7 +513,7 @@ button {
     height: 700px;
 }
 .c-kv-01__container--bg {
-    background: url(/img/common/dummy_1280x700.png) 0 0 no-repeat;
+    background: url(../img/common/dummy_1280x700.png) 0 0 no-repeat;
     background-size: cover;
 }
 .c-kv-01__img img {
