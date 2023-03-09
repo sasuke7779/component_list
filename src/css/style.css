@@ -271,6 +271,46 @@ button {
 /*  l-contents
 --------------------------------------------- */
 /* ---------------------------------------------
+*   l-global-nav
+--------------------------------------------- */
+.l-nav {
+    position: sticky;
+    top: 0;
+    background-color: #999;
+    z-index: 10;
+}
+.l-nav__container {
+    margin: auto;
+    width: 1200px;
+}
+.l-nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.l-nav__item {
+    width: 15%;
+    border-left: 1px solid #fff;
+}
+.l-nav__item:last-of-type {
+    border-right: 1px solid #fff;
+}
+.l-nav__link {
+    text-align: center;
+    display: block;
+    padding: 1em;
+}
+@media screen and (min-width: 768px) {
+    .l-nav__link {
+        transition: opacity 300ms;
+    }
+    .l-nav__link:hover {
+        opacity: 0.5;
+    }
+}
+
+/* ---------------------------------------------
 *   c-block
 --------------------------------------------- */
 .c-block {
