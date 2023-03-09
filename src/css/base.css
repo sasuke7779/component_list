@@ -1,0 +1,71 @@
+/* ---------------------------------------------
+*   Universal selector
+--------------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------
+*   html, body
+--------------------------------------------- */
+html,
+body {
+    color: #000;
+    font-size: 16px;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+@media screen and (max-width: 750px) {
+    html,
+body {
+        font-size: 1rem;
+    }
+}
+
+body {
+    line-height: 1.5;
+    min-width: 1200px;
+}
+@media screen and (max-width: 750px) {
+    body {
+        line-height: 1.5;
+        min-width: 320px;
+    }
+}
+
+/* ---------------------------------------------
+*   <a> tag
+--------------------------------------------- */
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+/* ---------------------------------------------
+*   <img> tag
+--------------------------------------------- */
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/* ---------------------------------------------
+*   <hr> tag as anchor target
+--------------------------------------------- */
+hr[id^=anchor-] {
+    display: block;
+    width: auto;
+    height: 0;
+    padding: 80px 0 0 0;
+    border: 0;
+    margin: -80px 0 0 0;
+    background: 0;
+    pointer-events: none;
+}
+@media screen and (max-width: 750px) {
+    hr[id^=anchor-] {
+        padding-top: 60px;
+        margin-top: -60px;
+    }
+}

@@ -1,0 +1,23 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use 'sass:math';
+@use '../../index' as *;
+/* ---------------------------------------------
+*   c-txt
+--------------------------------------------- */
+.c-txt {
+    font-size: pxtorem(14, 'pc');
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtorem(30, 'sp');
+    }
+
+    &__strong {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    &__italic {
+        font-style: italic;
+    }
+}

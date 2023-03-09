@@ -1,0 +1,30 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use 'sass:math';
+@use '../../index' as *;
+/* ---------------------------------------------
+*   c-list
+--------------------------------------------- */
+/*  c-list-ol
+--------------------------------------------- */
+.c-list-ol {
+  counter-reset: number 0;
+  &__item {
+    &::before {
+      padding-right: 0.2em;
+      counter-increment: number 1;
+      content: counter(number) ' ';
+    }
+  }
+}
+/*  c-list-ul
+--------------------------------------------- */
+.c-list-ul {
+  &__item {
+    &::before {
+      padding-right: 0.2em;
+      content: '■';
+    }
+  }
+}

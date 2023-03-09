@@ -1,0 +1,85 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use 'sass:math';
+@use 'font' as *;
+@use 'color' as *;
+@use 'variable' as *;
+@use 'function' as *;
+/* ---------------------------------------------
+*   Universal selector
+--------------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------
+*   html, body
+--------------------------------------------- */
+html,
+body {
+    color: $text-main;
+    font-size: $root-fz-pc * 1px;
+    font-family: $root-ff;
+    -webkit-text-size-adjust: 100%;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtorem($root-fz-sp, 'sp');
+    }
+}
+body {
+    line-height: $line-height-pc;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        line-height: $line-height-sp;
+        min-width: $minwidth-sp * 1px;
+    }
+}
+
+/* ---------------------------------------------
+*   <a> tag
+--------------------------------------------- */
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+/* ---------------------------------------------
+*   <img> tag
+--------------------------------------------- */
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/* ---------------------------------------------
+*   <input> tag
+--------------------------------------------- */
+input {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------
+*   <textarea> tag
+--------------------------------------------- */
+textarea {
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
+/* ---------------------------------------------
+*   <button> tag
+--------------------------------------------- */
+button {
+    font: inherit;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}

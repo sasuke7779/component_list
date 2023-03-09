@@ -1,0 +1,43 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use 'sass:math';
+@use '../../index' as *;
+/* ---------------------------------------------
+*   c-btn
+--------------------------------------------- */
+/*  c-btn-round-01
+--------------------------------------------- */
+.c-btn-round-01 {
+  font-size: pxtorem(16, 'pc');
+  padding: 0.5em;
+  color:$c-white;
+  border-radius: 50px;
+  background-color: #e5420b;
+  cursor: pointer;
+
+  @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+    @include hover-opacity()
+  }
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    font-size: pxtovw(22, 'sp');
+  }
+}
+
+/*  c-btn-square-01
+--------------------------------------------- */
+.c-btn-square-01 {
+  font-size: pxtorem(16, 'pc');
+  color:$c-white;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: #e5420b;
+  cursor: pointer;
+
+  @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+    @include hover-opacity()
+  }
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    font-size: pxtovw(22, 'sp');
+  }
+}

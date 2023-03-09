@@ -1,0 +1,36 @@
+{
+  "name": "project-template",
+  "version": "4.4.2",
+  "description": "Project Template",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dawninc.backlog.jp/git/ME/project-template-4.git"
+  },
+  "author": "DAWN Inc.",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlhint": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-prettier": "github:TheDancingCode/gulp-prettier#master",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "install": "^0.13.0",
+    "npm": "^8.7.0",
+    "sass": "^1.50.1"
+  },
+  "dependencies": {
+    "connect-ssi": "^1.1.1"
+  }
+}

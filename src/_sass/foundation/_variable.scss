@@ -1,0 +1,59 @@
+// ==========================================================
+// Name:
+//     _variable.scss
+//
+// Description:
+//     サイト全体に共通する変数を定義
+//
+// ==========================================================
+// ---------------------------------------------
+//   design config
+//----------------------------------------------
+
+//   design width
+//----------------------------------------------
+$design-width-pc: 1280;
+$design-width-tb: 900;
+$design-width-sp: 750;
+
+//   contents width
+//   contents side padding を除いた部分の幅
+//----------------------------------------------
+$contents-width-pc: 1200;
+$contents-width-tb: 880;
+$contents-width-sp: 730;
+
+//   contents side padding
+//----------------------------------------------
+$contents-side-padding-pc: 10;
+$contents-side-padding-tb: 10;
+$contents-side-padding-sp: 10;
+
+//   min width
+//----------------------------------------------
+$minwidth-pc: $contents-width-pc;
+$minwidth-tb: $design-width-sp + 1;
+$minwidth-sp: 320;
+
+//   breakpoints
+//----------------------------------------------
+$breakpoint-pc: 1024;
+$breakpoint-tb: 768;
+$breakpoint-sp: 767;
+
+//   fixed header height
+//----------------------------------------------
+$fixed-header-height-pc: 80;
+$fixed-header-height-tb: 60;
+$fixed-header-height-sp: 60;
+
+//   line height
+//----------------------------------------------
+$line-height-pc: 1.5;
+$line-height-tb: 1.5;
+$line-height-sp: 1.5;
+
+//   hover
+//----------------------------------------------
+$hover-opacity-ratio: 0.8;
+$hover-opacity-ms: 300;

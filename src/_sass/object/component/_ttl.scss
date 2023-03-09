@@ -1,0 +1,45 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use 'sass:math';
+@use '../../index' as *;
+/* ---------------------------------------------
+*   c-ttl
+--------------------------------------------- */
+/*  c-ttl-big-01
+--------------------------------------------- */
+.c-ttl-big-01 {
+  font-size: pxtorem(48, 'pc');
+  font-weight: bold;
+
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    font-size: pxtorem(60, 'pc');
+  }
+}
+/*  c-ttl-label-01
+--------------------------------------------- */
+.c-ttl-label-01 {
+  position: relative;
+  padding-left: pxtorem(10, 'pc');
+  font-size: pxtorem(32, 'pc');
+  font-weight: bold;
+  background-color: #999;
+  border-left: 8px solid blue;
+
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    font-size: pxtorem(50, 'pc');
+  }
+}
+
+/*  c-ttl-line-01
+--------------------------------------------- */
+.c-ttl-line-01 {
+  padding-left: pxtorem(10, 'pc');
+  font-size: pxtorem(32, 'pc');
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    font-size: pxtorem(50, 'pc');
+  }
+}

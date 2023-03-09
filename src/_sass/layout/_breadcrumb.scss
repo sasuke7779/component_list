@@ -1,0 +1,31 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use 'sass:math';
+@use '../index' as *;
+/* ---------------------------------------------
+*   l-breadcrumb
+--------------------------------------------- */
+.l-breadcrumb {
+    $host: &;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:first-of-type)::before {
+            content: '>';
+            margin-right: 0.5em;
+            margin-left: 0.5em;
+        }
+    }
+
+    &__txt {
+        &[href] {
+            @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+                @include hover-underline-none;
+            }
+        }
+    }
+}

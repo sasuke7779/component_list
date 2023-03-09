@@ -1,0 +1,28 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use 'sass:math';
+@use '../../index' as *;
+/* ---------------------------------------------
+*   c-cassette
+--------------------------------------------- */
+.c-cassette {
+    margin-bottom: 80px;
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        margin-bottom: pxtovw(100, 'sp');
+    }
+
+    &__head {
+        margin-bottom: 30px;
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(30, 'sp');
+        }
+    }
+
+    &__body {
+        padding: 0 10px;
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding: 0;
+        }
+    }
+}

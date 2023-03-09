@@ -1,0 +1,45 @@
+@use 'font' as *;
+@use 'color' as *;
+@use 'variable' as *;
+// ==========================================================
+// Name:
+//     _function.scss
+//
+// Description:
+//     使い回す処理を記述
+//
+// Contents:
+// ==========================================================
+/// @param {number} $value  - rem単位に変換するpx単位の値
+/// @param {string} $device - 基準となるデバイス名
+/// @return {string} rem単位のフォントサイズ
+///
+/* ---------------------------------------------
+*   pxtorem
+--------------------------------------------- */
+@function pxtorem($value, $device) {
+  @if $device == 'pc' {
+    @return calc($value / $root-fz-pc) * 1rem;
+  }
+  @if $device == 'tb' {
+    @return calc($value / $root-fz-tb) * 1rem;
+  }
+  @if $device == 'sp' {
+    @return calc($value / $root-fz-sp) * 1rem;
+  }
+}
+
+/* ---------------------------------------------
+*   pxtovw
+--------------------------------------------- */
+@function pxtovw($value, $device) {
+  @if $device == 'pc' {
+    @return calc($value * 100 / $design-width-pc) * 1vw;
+  }
+  @if $device == 'tb' {
+    @return calc($value * 100 / $design-width-tb) * 1vw;
+  }
+  @if $device == 'sp' {
+    @return calc($value * 100 / $design-width-sp) * 1vw;
+  }
+}
