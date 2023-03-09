@@ -33,8 +33,8 @@ const path = require('path');
 // ディレクトリのパスは、gulpfile.js(このファイル)からの相対パスで記述する
 // gulpfile.jsと同じ階層にあるディレクトリのパスは、先頭に「./」をつけない
 const baseDir = {
-  src: 'docs', // 監視対象ディレクトリのパス
-  dist: 'docs', // 出力先ディレクトリのパス
+  src: 'src', // 監視対象ディレクトリのパス
+  dist: 'src', // 出力先ディレクトリのパス
   build: 'dist', // リリース用出力先ディレクトリのパス
   js: 'js', // JavaScriptを管理するディレクトリのパス
   sass: '_sass', // SASSを管理するディレクトリのパス
